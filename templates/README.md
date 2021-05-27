@@ -1,26 +1,23 @@
->📋  A template README.md for code accompanying a Machine Learning paper
 
-# My Paper Title
+## Householder-Absolute Neural LayersFor High Variability And Deep Trainability
 
-This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
-
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
+This repository is the official implementation of [Householder-Absolute Neural LayersFor High Variability And Deep Trainability]. 
 
 ## Requirements
 
 To install requirements:
 
 ```setup
-pip install -r requirements.txt
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+conda install pandas numpy matplotlib
 ```
-
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
 
 ## Training
 
-To train the model(s) in the paper, run this command:
+To train the model(s) in the paper on Checkerboard dataset, run this command:
 
 ```train
+cd ch
 python train.py --input-data <path_to_data> --alpha 10 --beta 20
 ```
 
