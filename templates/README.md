@@ -30,7 +30,7 @@ cd checkerboard_experiment/
 ```
 
 ```train
-python main.py --hannet --activation ABS --initial orth
+python main.py --model hannet --activation ABS --initial orth
 ```
 
 
@@ -50,9 +50,9 @@ python test.py --model hannet
 ### [Classification on Checkerboard]
 
 | Model name         | Accuracy  | 
-| ------------------ |---------------- | 
-| HanNet   |     99.5%         |  
-| FCNet   |     85.6%         |  
+| ------------------ |----   --- | 
+| HanNet   |     99.5%           |  
+| FCNet   |     85.6%            |  
 
 
 
@@ -88,6 +88,6 @@ python test.py --device gpu --gpu 0
 ### [Classification on CIFAR-10]
 
 | Model name         | Accuracy  | 
-| ------------------ |---------------- | 
-| LaNet   |     99.01%         |  
-| FCNet   |     99.1%         |  
+| ------------------ |---------- | 
+| LaNet   |     99.01%           |  
+| FCNet   |     99.1%            |  
