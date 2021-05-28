@@ -63,7 +63,7 @@ cd regession_experiments/
 ```
 
 ```
-python main.py --model hannet --prob eleveators --rho 0.8
+python main.py --model hannet --prob elevators --rho 0.8
 ```
 
 #  Experiments on CIFAR-10
