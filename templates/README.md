@@ -6,7 +6,7 @@ This repository is the official implementation of [Householder-Absolute Neural L
 ## Requirements
 
 To install requirements:
-
+fisrt download anaconda and then use conda install
 ```setup
 conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
 conda install pandas numpy matplotlib
