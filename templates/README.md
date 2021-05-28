@@ -50,7 +50,7 @@ python test.py --model hannet
 ### [Classification on Checkerboard]
 
 | Model name         | Accuracy  | 
-| ------------------ |----   --- | 
+| ------------------ |---------- | 
 | HanNet   |     99.5%           |  
 | FCNet   |     85.6%            |  
 
