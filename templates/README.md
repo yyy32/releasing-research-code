@@ -13,15 +13,16 @@ It is run using python 3.6. and it has the following required packages:
 --pandas
 --matplotlib
 ```
+## Experiments on Checkerboard
 
-## Animation on Checkerboard
+### Animation on Checkerboard
 GIFs of training HanNet and FCNet are in 
 
 ```
 checkerboard_experiment/animation/
 ```
 
-## Training on Checkerboard
+### Training on Checkerboard
 
 To train HanNet in the paper on Checkerboard dataset, run this command:
 
@@ -34,7 +35,7 @@ python main.py --model hannet --activation ABS --initial orth
 ```
 
 
-## Evaluation on Checkerboard 
+### Evaluation on Checkerboard 
 There are pre-trained models on 
 ```
 checkerboard_experiment/file
@@ -65,7 +66,7 @@ cd regession_experiments/
 python main.py --model hannet --prob eleveators --rho 0.8
 ```
 
-##  Experiments on CIFAR-10
+#  Experiments on CIFAR-10
 
 Download features and pre-trained models in
 https://drive.google.com/drive/folders/1F4UsbUM81iVvO9eX5bWoNZzR3hxfuwXy?usp=sharing
