@@ -95,4 +95,4 @@ python test.py --device gpu --gpu 0
 | Model name         | Test err  | 
 | ------------------ |---------- | 
 | LaNet   |     0.99%           |  
-| FCNet   |     0.9%            |  
+| FCNet   |     0.89%            |  
