@@ -5,16 +5,25 @@ This repository is the official implementation of [Householder-Absolute Neural L
 
 ## Requirements
 
-To install requirements:
-fisrt download anaconda and then use conda install
+It is run using python 3.6. and it has the following required packages: 
+
 ```setup
-conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
-conda install pandas numpy matplotlib
+--pytorch
+--numpy
+--pandas
+--matplotlib
 ```
 
-## Training
+## Animation on Checkerboard
+GIFs of training HanNet and FCNet are in 
 
-To train the model(s) in the paper on Checkerboard dataset, run this command:
+```
+checkerboard_experiment/animation
+```
+
+## Training on Checkerboard
+
+To train HanNet in the paper on Checkerboard dataset, run this command:
 
 ```
 cd checkerboard_experiment/
@@ -22,33 +31,21 @@ cd checkerboard_experiment/
 
 ```train
 python main.py --hannet --activation ABS --initial orth
-or
-python main.py --fcnet --activation ReLU --initial kaiming
 ```
 
 
-## Evaluation
+## Evaluation on Checkerboard 
+There are pretrained models on 
+```
+checkerboard_experiment/file
+```
 
-To evaluate my model on Checkerboard, run:
+To evaluate this model on Checkerboard, run:
 
 ```eval
 python test.py --model hannet
-or
-python test.py --model fcnet
 ```
 
-
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
-
-## Results
-
-Our model achieves the following performance on :
 
 ### [Classification on Checkerboard]
 
@@ -58,9 +55,39 @@ Our model achieves the following performance on :
 | FCNet   |     85.6%         |  
 
 
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
 
+##  Experiments on Regression Datasets
+```
+cd regession_experiments/
+```
 
-## Contributing
+```
+python main.py --hannet --prob eleveators --rho 0.8
+```
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+##  Experiments on CIFAR-10
+
+```
+cd cifar10_experiments/
+```
+## Training on CIFAR-10
+
+```
+python main.py --device gpu --gpu 0
+```
+
+## Testing on CIFAR-10
+There are pretrained models: 
+```
+checkerboard_experiment/model/han.pkl
+```
+You can run out of results by directly
+```
+python test.py --device gpu --gpu 0
+```
+### [Classification on CIFAR-10]
+
+| Model name         | Accuracy  | 
+| ------------------ |---------------- | 
+| LaNet   |     99.01%         |  
+| FCNet   |     99.1%         |  
