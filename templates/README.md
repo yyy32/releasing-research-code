@@ -38,7 +38,7 @@ python main.py --model hannet --activation ABS --initial orth
 ### Evaluation on Checkerboard 
 There are pre-trained models on 
 ```
-checkerboard_experiment/file
+checkerboard_experiment/file/
 ```
 
 To evaluate this model on Checkerboard, run:
