@@ -1,7 +1,7 @@
 
-## Householder-Absolute Neural LayersFor High Variability And Deep Trainability
+## Householder-Absolute Neural Layers For High Variability And Deep Trainability
 
-This repository is the official implementation of [Householder-Absolute Neural LayersFor High Variability And Deep Trainability]. 
+This repository is the official implementation of [Householder-Absolute Neural Layers For High Variability And Deep Trainability]. 
 
 ## Requirements
 
