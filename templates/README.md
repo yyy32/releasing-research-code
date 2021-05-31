@@ -47,7 +47,7 @@ There are pre-trained models in
 checkerboard_experiments/model/
 ```
 
-To evaluate HanNet or FCNet on Checkerboard, run:
+To evaluate HanNet and FCNet on Checkerboard, run:
 
 ```
 python test.py --model hannet
