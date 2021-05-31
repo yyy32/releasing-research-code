@@ -19,7 +19,15 @@ We provide some GIFs about training HanNet and FCNet in
 ```
 demo/
 ```
-you can watch these animations.   
+you can watch these animations, where HanNet and FCNet achieve the following testing accuracy.   
+
+### [Classification on Checkerboard]
+
+| Model name         | Accuracy  | 
+| ------------------ |---------- | 
+| HanNet   |     99.5%           |  
+| FCNet    |     85.6%           |  
+
 
 ## Experiments on Checkerboard
 
@@ -50,15 +58,6 @@ python test.py --model hannet
 ```
 python test.py --model fcnet
 ```
-
-
-### [Classification on Checkerboard]
-
-| Model name         | Accuracy  | 
-| ------------------ |---------- | 
-| HanNet   |     99.5%           |  
-| FCNet    |     85.6%           |  
-
 
 
 ##  Experiments on Regression Datasets
