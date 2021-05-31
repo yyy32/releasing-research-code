@@ -5,10 +5,10 @@ This repository is the official implementation of [Householder-Absolute Neural L
 
 ## Requirements
 
-It is run using python 3.6. and it has the following required packages: 
+The codes have been developed, they require the following packages to run.
 
 ```setup
---pytorch
+--pytorch >=1.8
 --numpy
 --pandas
 --matplotlib
