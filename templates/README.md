@@ -35,11 +35,10 @@ python main.py --model hannet --activation ABS --initial orth
 or
 python main.py --model fcnet --activation ReLU --initial kaiming
 ```
-```
-
 
 ### Evaluation on Checkerboard 
-There are pre-trained models on 
+
+There are pre-trained models on
 ```
 checkerboard_experiment/file/
 ```
@@ -48,6 +47,9 @@ To evaluate this model on Checkerboard, run:
 
 ```eval
 python test.py --model hannet
+or
+python test.py --model fcnet
+
 ```
 
 
