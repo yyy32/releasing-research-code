@@ -19,9 +19,7 @@ We provide some GIFs about training HanNet and FCNet in
 ```
 demo/
 ```
-you can watch these animations, where HanNet and FCNet achieve the following testing accuracy.   
-
-### [Classification on Checkerboard]
+you can watch these animations, where HanNet and FCNet achieve the following testing accuracy:   
 
 | Model name         | Accuracy  | 
 | ------------------ |---------- | 
