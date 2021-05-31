@@ -21,12 +21,6 @@ demo/
 ```
 you can watch these animations, where HanNet and FCNet achieve the following testing accuracy:   
 
-| Model name         | Accuracy  | 
-| ------------------ |---------- | 
-| HanNet   |     99.5%           |  
-| FCNet    |     85.6%           |  
-
-
 ## Experiments on Checkerboard
 
 ### Training on Checkerboard
@@ -56,6 +50,12 @@ python test.py --model hannet
 ```
 python test.py --model fcnet
 ```
+you should obtain the results:
+
+| Model name         | Accuracy  | 
+| ------------------ |---------- | 
+| HanNet   |     99.5%           |  
+| FCNet    |     85.6%           |  
 
 
 ##  Experiments on Regression Datasets
