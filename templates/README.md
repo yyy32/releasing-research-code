@@ -13,17 +13,17 @@ It is run using python 3.6. and it has the following required packages:
 --pandas
 --matplotlib
 ```
+
+## Demos on Checkerboard
+We provide some GIFs about training HanNet and FCNet in 
+```
+demo/
+```
+you can watch these animations   
+
 ## Experiments on Checkerboard
 
-### Animation on Checkerboard
-GIFs of training HanNet and FCNet are in 
-
-```
-checkerboard_experiment/animation/
-```
-
 ### Training on Checkerboard
-
 To train HanNet in the paper on Checkerboard dataset, run this command:
 
 ```
@@ -32,6 +32,9 @@ cd checkerboard_experiment/
 
 ```train
 python main.py --model hannet --activation ABS --initial orth
+or
+python main.py --model fcnet --activation ReLU --initial kaiming
+```
 ```
 
 
@@ -53,7 +56,7 @@ python test.py --model hannet
 | Model name         | Accuracy  | 
 | ------------------ |---------- | 
 | HanNet   |     99.5%           |  
-| FCNet   |     85.6%            |  
+| FCNet    |     85.6%           |  
 
 
 
@@ -68,10 +71,10 @@ python main.py --model hannet --prob elevators --rho 0.8
 
 #  Experiments on CIFAR-10
 
-Download features and pre-trained models in
+Download features and pre-trained models from
 https://drive.google.com/drive/folders/1F4UsbUM81iVvO9eX5bWoNZzR3hxfuwXy?usp=sharing
 
-Then put the files in the directory ``checkerboard_experiment/``
+Then put the downloaded directories into the directory ``cifar10_experiment/``
 
 
 
@@ -83,17 +86,19 @@ python main.py --device gpu --gpu 0
 ```
 
 ## Testing on CIFAR-10
-There are pretrained models: 
+There are pre-trained models in
 ```
-checkerboard_experiment/model/han.pkl
+cifar10_xperiment/model
 ```
-You can run out of results by directly
+By running the following command:
 ```
 python test.py --device gpu --gpu 0
 ```
+you should obtain the results:
+
 ### [Classification on CIFAR-10]
 
 | Model name         | Test err  | 
 | ------------------ |---------- | 
-| LaNet   |     0.99%           |  
+| LaNet   |     0.97%            |  
 | FCNet   |     0.89%            |  
