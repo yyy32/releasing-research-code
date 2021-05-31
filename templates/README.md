@@ -98,8 +98,6 @@ python test.py --device gpu --gpu 0
 ```
 you should obtain the results:
 
-### [Classification on CIFAR-10]
-
 | Model name         | Test err  | 
 | ------------------ |---------- | 
 | LaNet   |     0.97%            |  
