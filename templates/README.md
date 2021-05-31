@@ -19,7 +19,12 @@ We provide some GIFs about training HanNet and FCNet in
 ```
 demo/
 ```
-you can watch these animations, where HanNet and FCNet achieve the following testing accuracy:   
+you can watch these animations, where HanNet and FCNet achieve the following testing accuracy:  
+
+| Model name         | Accuracy  | 
+| ------------------ |---------- | 
+| HanNet   |     99.5%           |  
+| FCNet    |     85.6%           |  
 
 ## Experiments on Checkerboard
 
@@ -37,9 +42,9 @@ python main.py --model fcnet --activation ReLU --initial kaiming
 
 ### Evaluation on Checkerboard 
 
-There are pre-trained models on
+There are pre-trained models in
 ```
-checkerboard_experiments/file/
+checkerboard_experiments/model/
 ```
 
 To evaluate HanNet or FCNet on Checkerboard, run:
@@ -50,13 +55,6 @@ python test.py --model hannet
 ```
 python test.py --model fcnet
 ```
-you should obtain the results:
-
-| Model name         | Accuracy  | 
-| ------------------ |---------- | 
-| HanNet   |     99.5%           |  
-| FCNet    |     85.6%           |  
-
 
 ##  Experiments on Regression Datasets
 To train HanNet in the paper on Elevators dataset, run this command:
