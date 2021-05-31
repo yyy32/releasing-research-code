@@ -19,7 +19,7 @@ We provide some GIFs about training HanNet and FCNet in
 ```
 demo/
 ```
-you can watch these animations   
+you can watch these animations.   
 
 ## Experiments on Checkerboard
 
@@ -27,12 +27,11 @@ you can watch these animations
 To train HanNet in the paper on Checkerboard dataset, run this command:
 
 ```
-cd checkerboard_experiment/
-```
-
-```train
+cd checkerboard_experiments/
 python main.py --model hannet --activation ABS --initial orth
-or
+```
+or to train FCNet, by running the following command
+```
 python main.py --model fcnet --activation ReLU --initial kaiming
 ```
 
@@ -40,16 +39,16 @@ python main.py --model fcnet --activation ReLU --initial kaiming
 
 There are pre-trained models on
 ```
-checkerboard_experiment/file/
+checkerboard_experiments/file/
 ```
 
-To evaluate this model on Checkerboard, run:
+To evaluate HanNet or FCNet on Checkerboard, run:
 
-```eval
+```
 python test.py --model hannet
-or
+```
+```
 python test.py --model fcnet
-
 ```
 
 
@@ -63,23 +62,24 @@ python test.py --model fcnet
 
 
 ##  Experiments on Regression Datasets
-```
-cd regession_experiments/
-```
+To train HanNet in the paper on Elevators dataset, run this command:
 
 ```
+cd regession_experiments/
 python main.py --model hannet --prob elevators --rho 0.8
-or
-python main.py --model fcnet --prob calhousing --rho 0.8
 ```
-where ``rho`` is training percentage.
+or train FCNet on Cal-housing dataset as follows
+```
+python main.py --model fcnet --prob calhousing --rho 0.2
+```
+where ``rho`` is training percentage. 
 
 ##  Experiments on CIFAR-10
 
 Download features and pre-trained models from
 https://drive.google.com/drive/folders/1F4UsbUM81iVvO9eX5bWoNZzR3hxfuwXy?usp=sharing
 
-Then put the downloaded directories into the directory ``cifar10_experiment/``
+Then put the downloaded directories into the directory ``cifar10_experiments/``
 
 
 
@@ -93,7 +93,7 @@ python main.py --device gpu --gpu 0
 ### Testing on CIFAR-10
 There are pre-trained models in
 ```
-cifar10_xperiment/model
+cifar10_experiments/model
 ```
 By running the following command:
 ```
